@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import Image from 'next/image'
-import Logo from '../../assets/images/Logo.png'
+import Logo from '../../assets/images/logo.png'
 import Typography from 'components/typography'
 import Button from 'components/button'
 import { ButtonSize, ButtonVariant } from 'components/button/button.types'
