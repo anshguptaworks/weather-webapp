@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google'
 import '../src/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,9 +14,11 @@ const inter = Inter({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <main className={inter.className}>
-        <Component {...pageProps} />
-      </main>
+      <QueryClientProvider client={queryClient}>
+        <main className={inter.className}>
+          <Component {...pageProps} />
+        </main>
+      </QueryClientProvider>
     </>
   )
 }

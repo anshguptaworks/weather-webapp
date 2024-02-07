@@ -11,8 +11,8 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
   placeholder?: string
   isFullWidth?: boolean
   icon?: IconsType
-  label: string
-  classname?: string
+  label?: string
+  className?: string
   type?: InputType
   autoFocus?: boolean
   style?: React.CSSProperties

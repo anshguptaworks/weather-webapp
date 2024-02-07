@@ -17,7 +17,8 @@ export const sizeClassNames = new Map<FontSize, string>([
   [TYPOGRAPHY_SIZE[34], 'text-[2.125rem]'],
   [TYPOGRAPHY_SIZE[36], 'text-4xl'],
   [TYPOGRAPHY_SIZE[40], 'text-[2.5rem]'],
-  [TYPOGRAPHY_SIZE[48], 'text-5xl']
+  [TYPOGRAPHY_SIZE[48], 'text-5xl'],
+  [TYPOGRAPHY_SIZE[96], 'text-8xl']
 ])
 
 export const fontWeightClassNames = new Map<FontWeight, string>([

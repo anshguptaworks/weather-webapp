@@ -16,7 +16,8 @@ export const TYPOGRAPHY_SIZE: Record<FontSize, FontSize> = {
   34: 34,
   36: 36,
   40: 40,
-  48: 48
+  48: 48,
+  96: 96
 }
 
 export const TYPOGRAPHY_FONT_WEIGHT: Record<FontWeight, FontWeight> = {

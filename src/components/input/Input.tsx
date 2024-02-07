@@ -8,7 +8,7 @@ import { getIcons } from 'assets'
 const Input = (
   {
     label,
-    classname,
+    className,
     icon,
     isFullWidth = false,
     placeholder,
@@ -24,13 +24,15 @@ const Input = (
   ref: React.LegacyRef<HTMLInputElement>
 ): JSX.Element => {
   return (
-    <div className="w-full">
-      <Typography size={14} fontWeight={400} className="text-primary mb-[0.625rem]">
-        {label}
-      </Typography>
+    <div className={cx('w-full', className)}>
+      {label && (
+        <Typography size={14} fontWeight={400} className="text-primary mb-[0.625rem]">
+          {label}
+        </Typography>
+      )}
       <div
         className={cx(
-          'p-4 cursor-text rounded border border-solid border-grey100 flex justify-end items-center max-h-10',
+          'p-4 cursor-text rounded border border-solid border-grey100 bg-white flex justify-end items-center max-h-10',
           inputClassName
         )}
       >
@@ -44,7 +46,7 @@ const Input = (
             width: '100%',
             outline: 'none'
           }}
-          className="w-full text-xs font-bold text-dark300 outline-none focus:outline-none"
+          className="w-full text-xs bg-transparent h-full font-medium text-dark300 outline-none focus:outline-none"
           onChange={onChange}
           {...rest}
         />

@@ -1,5 +1,10 @@
 export enum IconsType {
-  logo = 'Logo',
+  direction = 'Direction',
   notFound = 'NotFound',
-  onBoardingCornerSvg = 'OnBoardingCornerSvg'
+  onBoardingCornerSvg = 'OnBoardingCornerSvg',
+  sun = 'Sun',
+  moon = 'Moon',
+  delete = 'Delete',
+  sort = 'Sort',
+  search = 'Search'
 }

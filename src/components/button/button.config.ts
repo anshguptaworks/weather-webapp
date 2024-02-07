@@ -1,6 +1,6 @@
 import { ButtonConfig, ButtonSize, ButtonVariant } from './button.types'
 
-const disabledClass = 'disabled:bg-gray-100 disabled:text-grey-500'
+const disabledClass = 'disabled:opacity-70 disabled:text-grey-500 cursor-not-allowed'
 const disabledIconClass = 'stroke-grey-500'
 
 export const baseClass = [
